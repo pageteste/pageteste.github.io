@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff
+}
+
+
+
+nav {
+    display: none
+}
+
+h2 { 
+    margin-top: 60px;
+   font-family: Verdana;
+   text-align: center;
+   font-size: 35px;
+}
+
+form {
+    margin: 80px auto;
+    max-width: 500px;
+    background-color: #ece2e2;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px #0a0909;
+    text-align: left;
+    font-weight: 700;
+}
+
+form input[type=text],
+form select {
+    display: inline-block;
+    width: 150px;
+    height: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none
+}
+
+form input[type=submit] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #b68d57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700
+}
+
+input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700
+}
+
+form input[type=button] {
+    padding: 8px 19px;
+    background-color: #2a9b07;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 19px;
+    cursor: pointer;
+    margin: 30px 10px 50px;
+    font-weight: 700
+}
+
+#imposto_de_renda_desconto,
+#salario_liquido {
+    color: #345eac;
+    font-size: 30px;
+    display: flow-root;
+    margin: 15px;
+    font-weight: 700
+}
+
+#previdencia_desconto{
+    font-size: 19px;
+    display: flow-root;
+    margin: 8px;
+    color: #f51b1b;
+    font-weight: 700px;
+}
+#aliquota_previdencia,
+#previdencia_desconto {
+    color: #f51b1b;
+}
+
+a {
+    font-size: auto;
+    text-decoration: none
+}
+
+a:hover {
+    background-color: #95989e
+}
+
+
+
+/* Estilos do menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0486f0;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+}
+
+.menu-list li {
+    margin: 0 15px;
+}
+
+.menu-list li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos do menu responsivo */
+.toggle-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+    }
+
+    .menu-list.active {
+        display: flex;
+    }
+
+    .toggle-menu {
+        display: block;
+    }
+}
+
+
+.adsense-banner {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    border: 1px solid #df1515;
+    padding: 10px;
+    margin: 0;
+  }
+  
